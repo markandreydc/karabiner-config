@@ -74,12 +74,12 @@
       ]
     },
     {
-      "description": "Hyper + F → Open Finder",
+      "description": "Hyper + 4 → Open Xiaomi MiMo AI Studio",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "f",
+            "key_code": "4",
             "modifiers": {
               "mandatory": [
                 "left_control",
@@ -91,19 +91,19 @@
           },
           "to": [
             {
-              "shell_command": "open -a Finder"
+              "shell_command": "open https://aistudio.xiaomimimo.com"
             }
           ]
         }
       ]
     },
     {
-      "description": "Hyper + T → Open Terminal",
+      "description": "Hyper + 5 → Open GitHub",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "t",
+            "key_code": "5",
             "modifiers": {
               "mandatory": [
                 "left_control",
@@ -115,7 +115,31 @@
           },
           "to": [
             {
-              "shell_command": "open -a Terminal"
+              "shell_command": "open https://github.com"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Hyper + B → Open Brave Browser",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "left_control",
+                "left_option",
+                "left_shift",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Brave Browser'"
             }
           ]
         }
@@ -146,6 +170,158 @@
       ]
     },
     {
+      "description": "Hyper + D → Insert current date and time (YYYY-MM-DD_HH-MM-SS)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "d",
+            "modifiers": {
+              "mandatory": [
+                "left_control",
+                "left_option",
+                "left_shift",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "date '+%Y-%m-%d_%H-%M-%S' | pbcopy"
+            },
+            {
+              "key_code": "v",
+              "modifiers": ["left_command"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Hyper + E → Open Ente Authenticator",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "e",
+            "modifiers": {
+              "mandatory": [
+                "left_control",
+                "left_option",
+                "left_shift",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Ente Auth'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Hyper + F → Open Finder",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [
+                "left_control",
+                "left_option",
+                "left_shift",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a Finder"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Hyper + G → Open Google Chrome",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "left_control",
+                "left_option",
+                "left_shift",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Google Chrome'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Hyper + I → Insert UUID",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "left_control",
+                "left_option",
+                "left_shift",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "uuidgen | tr 'A-Z' 'a-z' | pbcopy"
+            },
+            {
+              "key_code": "v",
+              "modifiers": ["left_command"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Hyper + J → Open Joplin",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "j",
+            "modifiers": {
+              "mandatory": [
+                "left_control",
+                "left_option",
+                "left_shift",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a Joplin"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "description": "Hyper + L → Lock screen",
       "manipulators": [
         {
@@ -165,6 +341,78 @@
             {
               "key_code": "q",
               "modifiers": ["left_control", "left_command"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Hyper + N → Open Notes",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "left_control",
+                "left_option",
+                "left_shift",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a Notes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Hyper + O → Open Obsidian",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "left_control",
+                "left_option",
+                "left_shift",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a 'Obsidian'"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Hyper + T → Open Terminal",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "t",
+            "modifiers": {
+              "mandatory": [
+                "left_control",
+                "left_option",
+                "left_shift",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open -a Terminal"
             }
           ]
         }
@@ -219,58 +467,6 @@
       ]
     },
     {
-      "description": "Hyper + D → Insert current date and time (YYYY-MM-DD_HH-MM-SS)",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "d",
-            "modifiers": {
-              "mandatory": [
-                "left_control",
-                "left_option",
-                "left_shift",
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "date '+%Y-%m-%d_%H-%M-%S' | pbcopy"
-            },
-            {
-              "key_code": "v",
-              "modifiers": ["left_command"]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Hyper + N → Open Notes",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "n",
-            "modifiers": {
-              "mandatory": [
-                "left_control",
-                "left_option",
-                "left_shift",
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a Notes"
-            }
-          ]
-        }
-      ]
-    },
-    {
       "description": "Hyper + ` → Open System Settings",
       "manipulators": [
         {
@@ -295,12 +491,12 @@
       ]
     },
     {
-      "description": "Hyper + I → Insert UUID",
+      "description": "Hyper + F4 → Search Google for highlighted text",
       "manipulators": [
         {
           "type": "basic",
           "from": {
-            "key_code": "i",
+            "key_code": "f4",
             "modifiers": {
               "mandatory": [
                 "left_control",
@@ -312,210 +508,14 @@
           },
           "to": [
             {
-              "shell_command": "uuidgen | tr 'A-Z' 'a-z' | pbcopy"
+              "key_code": "c",
+              "modifiers": ["left_command"]
             },
             {
-              "key_code": "v",
-              "modifiers": ["left_command"]
+              "shell_command": "open \"https://www.google.com/search?q=$(pbpaste | sed 's/ /+/g')\""
             }
           ]
         }
-      ]
-    },
-    {
-      "description": "Hyper + B → Open Brave Browser",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "b",
-            "modifiers": {
-              "mandatory": [
-                "left_control",
-                "left_option",
-                "left_shift",
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'Brave Browser'"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Hyper + 4 → Open Yahoo Mail",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "4",
-            "modifiers": {
-              "mandatory": [
-                "left_control",
-                "left_option",
-                "left_shift",
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open https://mail.yahoo.com"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Hyper + O → Open Obsidian",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "o",
-            "modifiers": {
-              "mandatory": [
-                "left_control",
-                "left_option",
-                "left_shift",
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'Obsidian'"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Hyper + G → Open Google Chrome",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "g",
-            "modifiers": {
-              "mandatory": [
-                "left_control",
-                "left_option",
-                "left_shift",
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'Google Chrome'"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Hyper + 5 → GitHub",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "5",
-            "modifiers": {
-              "mandatory": [
-                "left_control",
-                "left_option",
-                "left_shift",
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open https://github.com"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Hyper + J → Open Joplin",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "j",
-            "modifiers": {
-              "mandatory": [
-                "left_control",
-                "left_option",
-                "left_shift",
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a Joplin"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Hyper + E → Ente Authenticator",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "e",
-            "modifiers": {
-              "mandatory": [
-                "left_control",
-                "left_option",
-                "left_shift",
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open -a 'Ente Auth'"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Hyper + F4 → Search google highlighted text",
-      "manipulators": [
-      {
-        "type": "basic",
-        "from": {
-        "key_code": "f4",
-        "modifiers": {
-          "mandatory": [
-          "left_control",
-          "left_option",
-          "left_shift",
-          "left_command"
-          ]
-        }
-        },
-        "to": [
-        {
-          "key_code": "c",
-          "modifiers": ["left_command"]
-        },
-        {
-          "shell_command": "open \"https://www.google.com/search?q=$(pbpaste | sed 's/ /+/g')\""
-        }
-        ]
-      }
       ]
     }
   ]
