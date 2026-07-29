@@ -18,7 +18,7 @@ Instead of treating these as separate modifiers, this configuration turns them i
 | Hyper + Key | Action |
 |---|---|
 | `F` | Finder |
-| `T` | Terminal |
+| `T` | Ghostty Terminal |
 | `C` | Calendar |
 | `N` | Notes |
 | `B` | Brave Browser |
@@ -37,7 +37,7 @@ Instead of treating these as separate modifiers, this configuration turns them i
 | `1` | https://www.google.com |
 | `2` | https://chatgpt.com |
 | `3` | https://chat.deepseek.com |
-| `4` | https://mail.yahoo.com |
+| `4` | https://aistudio.xiaomimimo.com |
 | `5` | https://github.com |
 
 ### Utilities
