@@ -18,7 +18,9 @@ Instead of treating these as separate modifiers, this configuration turns them i
 | Hyper + Key | Action |
 |---|---|
 | `F` | Finder |
-| `T` | Ghostty Terminal |
+| `H` | Hermes |
+| `T` | iTerm2 |
+| `Y` | Ghostty Terminal |
 | `C` | Calendar |
 | `N` | Notes |
 | `B` | Brave Browser |
@@ -38,7 +40,11 @@ Instead of treating these as separate modifiers, this configuration turns them i
 | `2` | https://chatgpt.com |
 | `3` | https://chat.deepseek.com |
 | `4` | https://aistudio.xiaomimimo.com |
-| `5` | https://github.com |
+| `5` | https://github.com/markandreydc |
+| `6` | https://portal.azure.com |
+| `7` | https://ai.azure.com |
+| `8` | https://claude.ai |
+| `M` | https://mail.yahoo.com/ |
 
 ### Utilities
 

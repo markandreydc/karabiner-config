@@ -91,6 +91,58 @@
                         ]
                     },
                     {
+                        "description": "Hyper + 6 → Open Azure Portal",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "6",
+                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_shift", "left_command"] }
+                                },
+                                "to": [{ "shell_command": "open https://portal.azure.com" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Hyper + 7 → Open Azure AI Foundry",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "7",
+                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_shift", "left_command"] }
+                                },
+                                "to": [{ "shell_command": "open https://ai.azure.com" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Hyper + 8 → Open Claude",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "8",
+                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_shift", "left_command"] }
+                                },
+                                "to": [{ "shell_command": "open https://claude.ai" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Hyper + M → Open Yahoo Mail",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "m",
+                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_shift", "left_command"] }
+                                },
+                                "to": [{ "shell_command": "open https://mail.yahoo.com/" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Hyper + H → Open Hermes",
                         "manipulators": [
                             {
