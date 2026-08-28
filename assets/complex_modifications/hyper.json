@@ -74,7 +74,7 @@
       ]
     },
     {
-      "description": "Hyper + 4 → Open Xiaomi MiMo AI Studio",
+      "description": "Hyper + 4 → Open Claude",
       "manipulators": [
         {
           "type": "basic",
@@ -91,19 +91,43 @@
           },
           "to": [
             {
-              "shell_command": "open https://aistudio.xiaomimimo.com"
+              "shell_command": "open https://claude.ai/new"
             }
           ]
         }
       ]
     },
     {
-      "description": "Hyper + 5 → Open GitHub profile",
+      "description": "Hyper + 5 → Open Gemini Chat",
       "manipulators": [
         {
           "type": "basic",
           "from": {
             "key_code": "5",
+            "modifiers": {
+              "mandatory": [
+                "left_control",
+                "left_option",
+                "left_shift",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open https://gemini.google.com"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Hyper + 6 → Open GitHub profile",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "6",
             "modifiers": {
               "mandatory": [
                 "left_control",
@@ -122,31 +146,7 @@
       ]
     },
     {
-      "description": "Hyper + 6 → Open Azure Portal",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "6",
-            "modifiers": {
-              "mandatory": [
-                "left_control",
-                "left_option",
-                "left_shift",
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open https://portal.azure.com"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Hyper + 7 → Open Azure AI Foundry",
+      "description": "Hyper + 7 → Open Azure Portal",
       "manipulators": [
         {
           "type": "basic",
@@ -163,31 +163,7 @@
           },
           "to": [
             {
-              "shell_command": "open https://ai.azure.com"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "description": "Hyper + 8 → Open Claude",
-      "manipulators": [
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "8",
-            "modifiers": {
-              "mandatory": [
-                "left_control",
-                "left_option",
-                "left_shift",
-                "left_command"
-              ]
-            }
-          },
-          "to": [
-            {
-              "shell_command": "open https://claude.ai"
+              "shell_command": "open https://portal.azure.com"
             }
           ]
         }
@@ -311,7 +287,9 @@
             },
             {
               "key_code": "v",
-              "modifiers": ["left_command"]
+              "modifiers": [
+                "left_command"
+              ]
             }
           ]
         }
@@ -418,7 +396,9 @@
             },
             {
               "key_code": "v",
-              "modifiers": ["left_command"]
+              "modifiers": [
+                "left_command"
+              ]
             }
           ]
         }
@@ -467,7 +447,10 @@
           "to": [
             {
               "key_code": "q",
-              "modifiers": ["left_control", "left_command"]
+              "modifiers": [
+                "left_control",
+                "left_command"
+              ]
             }
           ]
         }
@@ -545,7 +528,6 @@
         }
       ]
     },
-
     {
       "description": "Hyper + Esc → Open Activity Monitor",
       "manipulators": [
@@ -637,7 +619,9 @@
           "to": [
             {
               "key_code": "c",
-              "modifiers": ["left_command"]
+              "modifiers": [
+                "left_command"
+              ]
             },
             {
               "shell_command": "open \"https://www.google.com/search?q=$(pbpaste | sed 's/ /+/g')\""

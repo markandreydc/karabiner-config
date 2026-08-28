@@ -40,10 +40,9 @@ Instead of treating these as separate modifiers, this configuration turns them i
 | `2` | https://chatgpt.com |
 | `3` | https://chat.deepseek.com |
 | `4` | https://aistudio.xiaomimimo.com |
-| `5` | https://github.com/markandreydc |
-| `6` | https://portal.azure.com |
-| `7` | https://ai.azure.com |
-| `8` | https://claude.ai |
+| `5` | https://gemini.google.com |
+| `6` | https://github.com/markandreydc |
+| `7` | https://portal.azure.com |
 | `M` | https://mail.yahoo.com/ |
 
 ### Utilities
