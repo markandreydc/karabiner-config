@@ -266,7 +266,7 @@
       ]
     },
     {
-      "description": "Hyper + D → Insert current date and time (YYYY-MM-DD_HH-MM-SS)",
+      "description": "Hyper + D → Type current date and time (YYYY-MM-DD_HH-MM-SS)",
       "manipulators": [
         {
           "type": "basic",
@@ -283,13 +283,7 @@
           },
           "to": [
             {
-              "shell_command": "date '+%Y-%m-%d_%H-%M-%S' | pbcopy"
-            },
-            {
-              "key_code": "v",
-              "modifiers": [
-                "left_command"
-              ]
+              "shell_command": "osascript -e 'tell application \"System Events\" to keystroke (do shell script \"date +%Y-%m-%d_%H-%M-%S\")'"
             }
           ]
         }
