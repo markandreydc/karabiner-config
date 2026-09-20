@@ -274,6 +274,7 @@
                     },
                     {
                         "description": "Hyper + N → Open Notes",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
