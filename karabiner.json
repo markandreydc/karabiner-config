@@ -114,11 +114,11 @@
                         ]
                     },
                     {
-                        "description": "Hyper + 7 → Open Azure Portal",
+                        "description": "Hyper + \\ → Open Azure Portal",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "7",
+                                    "key_code": "backslash",
                                     "modifiers": { "mandatory": ["left_control", "left_option", "left_shift", "left_command"] }
                                 },
                                 "to": [{ "shell_command": "open https://portal.azure.com" }],
