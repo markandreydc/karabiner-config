@@ -114,6 +114,19 @@
                         ]
                     },
                     {
+                        "description": "Hyper + 7 → Open Grok Chat",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "7",
+                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_shift", "left_command"] }
+                                },
+                                "to": [{ "shell_command": "open https://grok.com" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Hyper + \\ → Open Azure Portal",
                         "manipulators": [
                             {
