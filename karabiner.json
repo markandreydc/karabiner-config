@@ -297,7 +297,7 @@
             ]
           },
           {
-            "description": "Hyper + B → Open or focus Brave Browser",
+            "description": "Hyper + B → Open new Brave window",
             "manipulators": [
               {
                 "from": {
@@ -313,7 +313,7 @@
                 },
                 "to": [
                   {
-                    "shell_command": "open -a \"Brave Browser\""
+                    "shell_command": "osascript -e 'tell application \"Brave Browser\" to make new window'"
                   }
                 ],
                 "type": "basic"
