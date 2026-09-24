@@ -21,9 +21,9 @@ Instead of treating these as separate modifiers, this configuration turns them i
 | `H` | Hermes |
 | `T` | iTerm2 |
 | `Y` | Ghostty Terminal |
-| `C` | Calendar |
+| `C` | Cryptomator |
 | `N` | Notes |
-| `B` | Brave Browser |
+| `B` | Brave Browser (new window) |
 | `G` | Google Chrome |
 | `O` | Obsidian |
 | `J` | Joplin |
