@@ -194,7 +194,7 @@
       ]
     },
     {
-      "description": "Hyper + \\ → Open Azure Portal",
+      "description": "Hyper + \\ → Open LinkedIn profile",
       "manipulators": [
         {
           "type": "basic",
@@ -211,7 +211,7 @@
           },
           "to": [
             {
-              "shell_command": "open https://portal.azure.com"
+              "shell_command": "open https://www.linkedin.com/in/markandreydelacruz/?isSelfProfile=true"
             }
           ]
         }
@@ -900,6 +900,54 @@
           "to": [
             {
               "shell_command": "open https://chat.z.ai/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Hyper + [ → Open Azure Portal",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "open_bracket",
+            "modifiers": {
+              "mandatory": [
+                "left_control",
+                "left_option",
+                "left_shift",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open https://portal.azure.com/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Hyper + ] → Open AWS Console",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "close_bracket",
+            "modifiers": {
+              "mandatory": [
+                "left_control",
+                "left_option",
+                "left_shift",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "open https://console.aws.amazon.com/"
             }
           ]
         }

@@ -126,14 +126,14 @@
                         ]
                     },
                     {
-                        "description": "Hyper + \\ → Open Azure Portal",
+                        "description": "Hyper + \\ → Open LinkedIn profile",
                         "manipulators": [
                             {
                                 "from": {
                                     "key_code": "backslash",
                                     "modifiers": { "mandatory": ["left_control", "left_option", "left_shift", "left_command"] }
                                 },
-                                "to": [{ "shell_command": "open https://portal.azure.com" }],
+                                "to": [{ "shell_command": "open https://www.linkedin.com/in/markandreydelacruz/?isSelfProfile=true" }],
                                 "type": "basic"
                             }
                         ]
@@ -515,6 +515,32 @@
                                     "modifiers": { "mandatory": ["left_control", "left_option", "left_shift", "left_command"] }
                                 },
                                 "to": [{ "shell_command": "open https://chat.z.ai/" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Hyper + [ → Open Azure Portal",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "open_bracket",
+                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_shift", "left_command"] }
+                                },
+                                "to": [{ "shell_command": "open https://portal.azure.com/" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Hyper + ] → Open AWS Console",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "close_bracket",
+                                    "modifiers": { "mandatory": ["left_control", "left_option", "left_shift", "left_command"] }
+                                },
+                                "to": [{ "shell_command": "open https://console.aws.amazon.com/" }],
                                 "type": "basic"
                             }
                         ]
