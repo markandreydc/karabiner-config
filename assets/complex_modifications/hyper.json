@@ -410,7 +410,7 @@
       ]
     },
     {
-      "description": "Hyper + U → Insert UUID",
+      "description": "Hyper + U → Open UpNote",
       "manipulators": [
         {
           "type": "basic",
@@ -427,13 +427,7 @@
           },
           "to": [
             {
-              "shell_command": "uuidgen | tr 'A-Z' 'a-z' | pbcopy"
-            },
-            {
-              "key_code": "v",
-              "modifiers": [
-                "left_command"
-              ]
+              "shell_command": "open -a UpNote"
             }
           ]
         }
