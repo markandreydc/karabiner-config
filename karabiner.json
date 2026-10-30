@@ -856,6 +856,30 @@
             ]
           },
           {
+            "description": "Hyper + Y → Open YouTube",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "y",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_control",
+                      "left_option",
+                      "left_shift",
+                      "left_command"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "shell_command": "open https://www.youtube.com/"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "Hyper + Z → Smaller window (200 px margin)",
             "manipulators": [
               {
